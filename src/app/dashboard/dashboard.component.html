@@ -1,0 +1,201 @@
+<div class="wrapper">
+
+    <nav id="sidebar">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header">
+            <h3>Collapsible Sidebar</h3>
+            <strong>BS</strong>
+        </div>
+
+        <!-- Sidebar Links -->
+        <ul class="list-unstyled components">
+            <li class="active">
+                <a routerLink="/dashboard/home" data-toggle="collapse" aria-expanded="false">
+                    <i class="fas fa-home"></i>
+                    Dashboard
+                    
+                </a>
+            </li>
+            <li>
+                <a href="#productSubmenu" data-toggle="collapse" aria-expanded="false">
+                    <i class="fas fa-box-open"></i>
+                    Product
+                    <i class="fas fa-caret-down afterSVG"></i>
+                </a>
+                <ul class="collapse list-unstyled" id="productSubmenu">
+                    <li>
+                        <a (click)="routeTo($event)" data-target="/dashboard/catalog">Catalog</a>
+                    </li>
+                    <li>
+                        <a routeLink="attribute">Attribute</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#salesSubmenu" data-toggle="collapse" aria-expanded="false">
+                    <i class="fas fa-dollar-sign"></i>
+                    Sales
+                    <i class="fas fa-caret-down afterSVG"></i>
+                </a>
+                <ul class="collapse list-unstyled" id="salesSubmenu">
+                    <li>
+                        <a href="#">Orders</a>
+                    </li>
+                    <li>
+                        <a href="#">Invoice</a>
+                    </li>
+                    <li>
+                        <a href="#">Shipments</a>
+                    </li>
+                    <li>
+                        <a href="#">Credit Memos</a>
+                    </li>
+                    <li>
+                        <a href="#">Billing Agreements</a>
+                    </li>
+                    <li>
+                        <a href="#">Transactions</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="#customerSubmenu" data-toggle="collapse" aria-expanded="false">
+                    <i class="fas fa-users"></i>
+                    Customers
+                    <i class="fas fa-caret-down afterSVG"></i>
+                </a>
+                <ul class="collapse list-unstyled" id="customerSubmenu">
+                    <li>
+                        <a href="#">All Customers</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#contentSubmenu" data-toggle="collapse" aria-expanded="false">
+                    <i class="fab fa-cuttlefish"></i>
+                    Content
+                    <i class="fas fa-caret-down afterSVG"></i>
+                </a>
+                <ul class="collapse list-unstyled" id="contentSubmenu">
+                    <li>
+                        <a href="#">Header</a>
+                    </li>
+                    <li>
+                        <a href="#">Footer</a>
+                    </li>
+                    <li>
+                        <a href="#">Theme Settings</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#reportSubmenu" data-toggle="collapse" aria-expanded="false">
+                    <i class="fas fa-clipboard-list"></i>
+                    Reports
+                    <i class="fas fa-caret-down afterSVG"></i>
+                </a>
+                <ul class="collapse list-unstyled" id="reportSubmenu">
+                    <li>
+                        <a href="#">Orders</a>
+                    </li>
+                    <li>
+                        <a href="#">Shipments</a>
+                    </li>
+                    <li>
+                        <a href="#">Refunds</a>
+                    </li>
+                    <li>
+                        <a href="#">Invoices</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#storeSubmenu" data-toggle="collapse" aria-expanded="false">
+                    <i class="fas fa-cog"></i>
+                    Store
+                    <i class="fas fa-caret-down afterSVG"></i>
+                </a>
+                <ul class="collapse list-unstyled" id="storeSubmenu">
+                    <li>
+                        <a href="#">Configuration</a>
+                    </li>
+                    <li>
+                        <a href="#">Order Status</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms & Conditions</a>
+                    </li>
+                    <li>
+                        <a href="#">Users List</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                <i class="glyphicon glyphicon-align-left"></i>
+                Toggle
+            </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <!-- <nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">Navbar</span>
+  </nav> -->
+    <div class="wrapper">
+        <section class="content">
+            <div class="card">
+                <div class="card-body">
+                    <router-outlet></router-outlet>
+                </div>
+            </div>
+            
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="row">
+            <div class="col-md-6">Copyright Protected</div>
+            <div class="col-md-6">Designed With<3</div>
+        </div>
+        
+    </footer>
+    </div>
