@@ -9,6 +9,9 @@ import { DataTablesModule } from 'angular-datatables';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashboardHomeComponent } from './dashboard-home/dashboard-home.component';
 import { CatalogComponent } from './catalog/catalog.component';
+import { AddProductComponent } from './catalog/add-product/add-product.component';
+import { EditProductComponent } from './catalog/edit-product/edit-product.component';
+import { AllProductComponent } from './catalog/all-product/all-product.component';
 
 
 
@@ -18,7 +21,10 @@ import { CatalogComponent } from './catalog/catalog.component';
     LoginComponent,
     DashboardComponent,
     DashboardHomeComponent,
-    CatalogComponent
+    CatalogComponent,
+    AddProductComponent,
+    EditProductComponent,
+    AllProductComponent
   ],
   imports: [
     BrowserModule,
